@@ -17,14 +17,14 @@ int main(int argc, char *argv[])
 		gettimeofday(&tv, NULL); 
 		t2 = (unsigned long long)tv.tv_sec*1000000 + tv.tv_usec;
 		tr = t2-t1;
-		printf("Время запуска родителя: %llu \n",tr);
+		printf("Время запуска родителя: %llu микросекунд \n",tr);
 	} else 
 	{
 		
 		gettimeofday(&tv, NULL); 
 		t3 = (unsigned long long)tv.tv_sec*1000000 + tv.tv_usec;
 		tr = t3-t1;
-		printf("Время запуска ребенка: %llu \n", tr);
+		printf("Время запуска ребенка: %llu микросекунд\n", tr);
 
 	}
 	return 0;
